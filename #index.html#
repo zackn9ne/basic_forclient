@@ -322,7 +322,7 @@
                                 }
 
                                 }	@media only screen and (max-width: 480px){
-                                    img[class=mcnImage]{
+                                    img[class=mcnImagesh]{
                                         width:100% !important;
                                     }
 
