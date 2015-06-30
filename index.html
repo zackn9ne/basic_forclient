@@ -32,6 +32,10 @@
 		}
 		a{
 			word-wrap:break-word;
+
+		}
+		li{
+		margin: 1em 0;
 		}
 		.ReadMsgBody{
 			width:100%;
@@ -67,6 +71,11 @@
 		}
 		a.mcnButton{
 			display:block;
+		}
+		ul {
+		list-style: none;
+		padding-left: 0px;
+		margin: 1em 2em 2em 0;
 		}
 	/*
 	@tab Page
@@ -383,6 +392,13 @@
 		}
 
 }	@media only screen and (max-width: 480px){
+		ul{
+		width:95% !important;
+		margin: 10px 0 14px 11px;
+		}
+
+
+}	@media only screen and (max-width: 480px){
 		td[class=mcnImageGroupContent]{
 			padding:9px !important;
 		}
@@ -568,7 +584,7 @@
 	@tip Make the header text larger in size for better readability on small screens.
 	*/
 		td[class=headerContainer] td[class=mcnTextContent],td[class=headerContainer] td[class=mcnTextContent] p{
-			/*@editable*/font-size:11px !important;
+			/*@editable*/font-size:14px !important;
 			/*@editable*/line-height:100% !important;
 		}
 
@@ -579,7 +595,7 @@
 	@tip Make the body text larger in size for better readability on small screens. We recommend a font size of at least 16px.
 	*/
 		td[class=bodyContainer] td[class=mcnTextContent],td[class=bodyContainer] td[class=mcnTextContent] p{
-			/*@editable*/font-size:18px !important;
+			/*@editable*/font-size:14px !important;
 			/*@editable*/line-height:125% !important;
 		}
 
@@ -620,6 +636,24 @@
 		td[class=footerContainer] a[class=utilityLink]{
 			display:block !important;
 		}
+
+}	@media only screen and (max-width: 480px){
+		img[class=techFlag]{
+		top: 11px;
+		position: relative;
+		margin-left:0px !important;
+}
+
+}	@media only screen and (max-width: 480px){
+		td[class=mcnTextContent]{
+		position: relative;
+		left: 10px;
+
+}
+
+
+
+
 
 }</style></head>
     <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
@@ -663,7 +697,7 @@
                         
                             <table border="0" cellpadding="18" cellspacing="0" class="mcnTextContentContainer" width="100%" style="background-color: #009AC7;">
                                 <tbody><tr>
-                                    <td valign="top" class="mcnTextContent" style="color: #FFFFFF;font-size: 18px;text-align: center; padding-bottom: 0;">
+                                    <td valign="top" class="mcnTextContent" style="color: #FFFFFF;font-size: 18;text-align: center; padding-bottom: 0;">
                                         
                                     </td>
                                 </tr>
@@ -728,8 +762,8 @@ lign: left; padding-top: 1em">
                         
                             <table border="0" cellpadding="18" cellspacing="0" class="mcnTextContentContainer" width="100%" style="background-color: #009AC7;">
                                 <tbody><tr>
-                                    <td valign="top" class="mcnTextContent" style="color: #FFFFFF;font-size: 18px;text-align: left;">
-                                        FREE SHIPPING ON ORDERS OVER $150 // CODE: PNKSPRNG
+                                    <td valign="top" class="mcnTextContent" style="color: #FFFFFF;font-size: 14px;text-align: left;line-height:1.23em !important">
+                                        FREE SHIPPING ON ORDERS OVER $150 // CODE: PNKSPRNG SHIPPING ON ORDERS OVER $150 // CODE: PNKSPRNG
                                     </td>
                                 </tr>
                             </tbody></table>
@@ -780,27 +814,19 @@ lign: left; padding-top: 1em">
     </tbody>
 </table>
 
-<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock">
     <tbody class="mcnTextBlockOuter">
         <tr>
             <td valign="top" class="mcnTextBlockInner">
                 
-                <table align="left" border="0" cellpadding="0" cellspacing="0" width="97" class="mcnTextContentContainer">
-                    <tbody><tr>
-                        
-                        <td valign="top" class="mcnTextContent" style="padding: 9px 0px 9px 18px;color: #000000;font-size: 18px;">
-
-                        </td>
-                    </tr>
-                </tbody></table>
                 
-                <table align="right" border="0" cellpadding="0" cellspacing="0" width="502" class="mcnTextContentContainer">
+                <table align="right" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextContentContainer">
                     <tbody><tr>
                         
-                        <td valign="top" class="mcnTextContent" style="padding: 9px 18px 9px 0px;color: #000000;font-size: 18px;">
+                        <td valign="top" class="mcnTextContent" style="color: #000000;font-size: 18px;">
                         
 
-<span style="line-height:20.7999992370605px">Lovely light colors and thrilling textures inspire our new Spring Collection.</span>
+
                         </td>
                     </tr>
                 </tbody></table>
@@ -819,7 +845,7 @@ lign: left; padding-top: 1em">
                     <tbody><tr>
                         
                         <td valign="top" class="mcnTextContent" style="padding: 9px 0px 9px 18px;color: #000000;font-size: 18px;">
-<img src="images/tech_sprite.png" alt="tech">                        
+<img class="techFlag" style="margin-left: 1em;" src="images/tech_sprite.png" alt="tech">                        
 
                             
                         </td>
@@ -851,7 +877,7 @@ lign: left; padding-top: 1em">
                     <tbody><tr>
                         
                         <td valign="top" class="mcnTextContent" style="padding: 9px 0px 9px 18px;color: #000000;font-size: 18px;">
-                        <img src="images/tech_sprite.png" alt="tech">                        
+                        <img class="techFlag" style="margin-left: 1em;" src="images/tech_sprite.png" alt="tech">                        
                             
                         </td>
                     </tr>
@@ -1172,7 +1198,7 @@ lign: left; padding-top: 1em">
                     <tbody><tr>
                         
                         <td valign="top" class="mcnTextContent" style="padding: 9px 0px 9px 18px;color: #000000;font-size: 18px;">
-			  <img src="images/tech_sprite.png" alt="tech">                        
+			  <img class="techFlag" style="margin-left: 1em;" src="images/tech_sprite.png" alt="tech">                        
                             
                         </td>
                     </tr>
@@ -1204,7 +1230,7 @@ lign: left; padding-top: 1em">
                     <tbody><tr>
                         
                         <td valign="top" class="mcnTextContent" style="padding: 9px 0px 9px 18px;color: #000000;font-size: 18px;">
-                        <img src="images/tech_sprite.png" alt="tech">                                                
+                        <img class="techFlag" style="margin-left: 1em;" src="images/tech_sprite.png" alt="tech">                                                
                             
                         </td>
                     </tr>
