@@ -8,3 +8,6 @@ This file resides on
 
 This must be used in conjunction with
 - mc:edit editable regions, specifically named via Mailchimp API
+
+When making updates!
+- push origin to gh-pages branch
