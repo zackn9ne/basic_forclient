@@ -175,35 +175,34 @@
 			margin:0;
 			/*@editable*/text-align:left;
 		}
-
 		div.notice{
 			/*@editable*/font-family:'Myriad Pro', sans-serif;
-			font-size: 12px;
-			padding: .7em 1em;
-			line-height: 1.2em;
-			font-weight: bold;
+			font-size:12px;
+			padding:.7em 1em;
+			line-height:1.2em;
+			font-weight:bold;
 		}
 		div.feed{
 			/*@editable*/font-family:'Myriad Pro', sans-serif;
-			font-size: 18px;
-			padding: .7em 1em;
-			line-height: 1.2em;
+			font-size:18px;
+			padding:.7em 1em;
+			line-height:1.2em;
 		}
 		div.feed.why{
-			font-size: 11px;
+			font-size:11px;
 		}
 		div.feed.related-to-image{
-			padding-top: .3em;
+			padding-top:1em;
 		}
-		p {
-			font-size: 14px;
+		p{
+			font-size:14px;
 			/*@editable*/font-family:'Myriad Pro', sans-serif;
-			padding: .7em 1em;
-			text-align: left;
+			padding:.7em 1em;
+			text-align:left;
 		}
 		.nudeHeader a{
-			text-decoration: none;
-			color: #009ac7;
+			text-decoration:none;
+			color:#009ac7;
 		}
 	/*
 	@tab Preheader
@@ -220,7 +219,7 @@
 	@section preheader text
 	@tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
 	*/
-		.preheaderContainer .mcnTextContent, .mcnImageContent,.preheaderContainer .mcnTextContent p{
+		.preheaderContainer .mcnTextContent,.mcnImageContent,.preheaderContainer .mcnTextContent p{
 			/*@editable*/color:#000000;
 			/*@editable*/font-family:'Myriad Pro', sans-serif;
 			/*@editable*/font-size:11px;
@@ -385,6 +384,10 @@
 			/*@editable*/color:#000000;
 			/*@editable*/font-weight:normal;
 			/*@editable*/text-decoration:underline;
+		}
+
+		.techFlag {
+			margin-bottom: .3em;
 		}
 	@media only screen and (max-width: 480px){
 		.row{
@@ -582,14 +585,16 @@
 			/*@editable*/line-height:125% !important;
 		}
 
-}@media only screen and (max-width: 480px){
+}	@media only screen and (max-width: 480px){
 	/*
 	@tab Mobile Styles
 	@section heading 3
 	@tip Make the third-level headings larger in size for better readability on small screens.
 	*/
 		p{
-			margin: 0 !important;
+			/*@tab Mobile Styles
+@section heading 3
+@tip Make the third-level headings larger in size for better readability on small screens.*/margin:0 !important;
 		}
 
 }	@media only screen and (max-width: 480px){
@@ -674,8 +679,8 @@
 	@tab Mobile Styles
 	@section Right Column Text
 	@tip Make the right column text larger in size for better readability on small screens. We recommend a font size of at least 16px.
-	*/mcnImageContentContainer
-		td[class=rightColumnContainer] td[class=mcnImageContentContainer],td[class=rightColumnContainer] td[class=mcnImageContentContainer] p{
+	*/
+		mcnImageContentContainertd[class=rightColumnContainer] td[class=mcnImageContentContainer],td[class=rightColumnContainer] td[class=mcnImageContentContainer] p{
 			/*@editable*/font-size:18px !important;
 			/*@editable*/line-height:125% !important;
 		}
@@ -715,6 +720,11 @@
 			top:-18px;
 			display:none;
 		}
+}		@media only screen and (min-width: 481px){
+		td[class=photo-credits], td[class=photo-credits] div{
+			padding-left: 0px !important;
+			padding-right: 0px !important;
+		}
 
 }</style></head>
     <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
@@ -746,43 +756,13 @@
                         <td align="center" valign="top">
                           <table border="0" cellpadding="0" cellspacing="0" width="600" class="templateContainer">
                             <tr>
-                              <td valign="top" class="headerContainer" style="padding-top:0px; padding-bottom:10px;"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock">
-                                  <tbody class="mcnBoxedTextBlockOuter">
-                                    <tr>
-                                      <td valign="top" class="mcnBoxedTextBlockInner">
-
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="599" class="mcnBoxedTextContentContainer">
-                                          <tbody><tr>
-
-                                              <td style="padding-top:0px; padding-left:18px; padding-bottom:0px; padding-right:18px;">
-
-                                                <table border="0" cellpadding="18" cellspacing="0" class="mcnTextContentContainer" width="100%" style="background-color: #009AC7;">
-                                                  <tbody><tr>
-                                                      <td valign="top" class="mcnTextContent" style="color: #FFFFFF;font-size: 18;text-align: center; padding-bottom: 0;">
-
-                                                      </td>
-                                                    </tr>
-                                                  </tbody></table>
-                                              </td>
-                                            </tr>
-                                          </tbody></table>
-
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+                              <td valign="top" class="headerContainer" style="padding-top:0px; padding-bottom:10px;">
 
 
-                                <table align="right" border="0" cellpadding="0" cellspacing="0" width="460" class="mcnTextContentContainer">
-                                  <tbody><tr>
 
 
-                                    </tr>
-                                  </tbody></table>
 
-                            
-
-
+                              	<!-- start contained elements -->
                                   <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock">
                                   	<tbody class="mcnBoxedTextBlockOuter">
                                   		<tr>
@@ -793,16 +773,11 @@
 
                                   						<td style="padding-top:0px; padding-left:18px; padding-bottom:0px; padding-right:18px;">
 
-                                  							<table border="0" cellpadding="18" cellspacing="0" class="mcnTextContentContainer" width="100%" style="background-color: white;">
-                                  								<tbody>
-                                  									<tr>
-                                  										<td valign="top" class="mcnTextContent" style="color: #009ac7;font-size: 14px !important;text-align: left;line-height:1.23em !important;left:0;padding:1em 18px;">
-                                  											<div mc:edit="notice" class="feed why">Weekly digest from Macaulay Honors College customized for you. View your preferences. View this email in your browser</div>
-                                  											<div class="feed why">
-                                  												<img align="center" alt="" src="images/blue-logo.png" style="width: 100%;">
-                                  											</div>                                        
-
-                                  										</td>
+                                  							<table border="0" cellpadding="18" cellspacing="0" class="mcnTextContentContainer" width="100%" style="background-color: #009AC7;">
+                                  								<tbody><tr>
+                                  									<td valign="top" class="mcnTextContent" style="color: #FFFFFF;font-size: 14px;text-align: left;line-height:1.23em !important;left:0;padding:0 1em;">
+                                  										<div id="noxtice" class="noxtice">&nbsp;</div>
+                                  									</td>
                                   									</tr>
                                   								</tbody>
                                   							</table>
@@ -814,27 +789,65 @@
                                   			</td>
                                   		</tr>
                                   	</tbody>
-                                  </table>          
-
-
-                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock">
-                                    <tbody class="mcnImageBlockOuter">
-                                      <tr>
-                                        <td valign="top" style="padding:9px" class="mcnImageBlockInner">
-                                          <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer">
-                                            <tbody><tr>
-                                                <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
-
-
-
-
-                                                </td>
-                                              </tr>
-                                            </tbody></table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
                                   </table>
+
+
+                            
+
+
+                              	<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock">
+                              		<tbody class="mcnBoxedTextBlockOuter">
+                              			<tr>
+                              				<td valign="top" class="mcnBoxedTextBlockInner">
+
+                              					<table align="left" border="0" cellpadding="0" cellspacing="0" width="600" class="mcnBoxedTextContentContainer">
+                              						<tbody><tr>
+
+                              							<td style="padding-top:0px; padding-left:18px; padding-bottom:0px; padding-right:18px;">
+
+                              								<table border="0" cellpadding="18" cellspacing="0" class="mcnTextContentContainer" width="100%" style="background-color: white;">
+                              									<tbody>
+                              										<tr>
+                              											<td valign="top" class="mcnTextContent" style="color: #009ac7;font-size: 14px !important;text-align: left;line-height:1.23em !important;left:0;padding:0 18px;">
+                              												<div mc:edit="notice" class="feed why">
+                              													You’re receiving this newsletter because you’re a Macaulay scholar, or have subscribed through our site.
+                              													<a style="color: #009ac7" href="*|UNSUB|*" class="utilityLink">Click to unsubscribe.</a>
+                              												</div>
+                              												<div class="feed why">
+                              													<img align="center" alt="" src="https://gallery.mailchimp.com/036babea48ecf05c961828f3e/images/7cdb6813-d336-4dde-b251-7f64e51f7416.png" style="width: 100%;">
+                              												</div>                                        
+
+                              											</td>
+                              										</tr>
+                              									</tbody>
+                              								</table>
+
+                              							</td>
+                              						</tr></tbody>
+                              					</table>
+
+                              				</td>
+                              			</tr>
+                              		</tbody>
+                              	</table>          
+
+
+                              	<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock">
+                              		<tbody class="mcnImageBlockOuter">
+                              			<tr>
+                              				<td valign="top" style="padding:9px" class="mcnImageBlockInner">
+                              					<table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer">
+                              						<tbody>
+                              							<tr>
+                              								<td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                              								</td>
+                              							</tr>
+                              						</tbody>
+                              					</table>
+                              				</td>
+                              			</tr>
+                              		</tbody>
+                              	</table>
 
                                   <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock">
                                   	<tbody class="mcnBoxedTextBlockOuter">
@@ -935,7 +948,7 @@
 
                          
 
-
+                                  <!-- stripe -->
                                   <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="margin-top: 1em;">
 
                                     <tbody class="mcnImageBlockOuter">
@@ -946,7 +959,7 @@
                                                 <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
 
 
-                                                  <img align="center" alt="" src="https://gallery.mailchimp.com/036babea48ecf05c961828f3e/images/722866b5-33f1-439c-b69f-5aa7c1c69b43.png" width="563.9999847412109" style="max-width:564px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                                 
 
 
                                                 </td>
@@ -956,6 +969,27 @@
                                       </tr>
                                     </tbody>
                                   </table>
+                                  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock">
+                                    <tbody class="mcnImageBlockOuter">
+                                      <tr>
+                                        <td valign="top" style="padding: 0px 9px" class="mcnImageBlockInner">
+                                          <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer">
+                                            <tbody><tr>
+                                                <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+
+
+                                                   <img align="center" alt="" src="https://gallery.mailchimp.com/036babea48ecf05c961828f3e/images/722866b5-33f1-439c-b69f-5aa7c1c69b43.png" width="563.9999847412109" style="max-width:564px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+
+
+                                                </td>
+                                              </tr>
+                                            </tbody></table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>   
+
+
 
                                   <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock">
                                   	<tbody class="mcnBoxedTextBlockOuter">
@@ -973,7 +1007,7 @@
                                   									<td valign="top" class="mcnTextContent" style="color: black;font-size: 18px !important;text-align: left;line-height:1.23em !important;left:0;padding:1em 18px;">
                                   										<div mc:edit="noxtice" class="feed">Repeatable region without image column: Lovely light colors and thrilling textures inspire our new Spring Collection.</div>
                                   										  
-                                  										<div mc:edit="related-to-image" class="feed related-to-image"><img class="techFlag" style="display:block; position: relative;" src="images/facegfk.jpg" alt="tech" mc:edit="">Repeatable region without image column: Lovely light colors and thrilling textures inspire our new Spring Collection.</div>
+                                  										<div mc:edit="relatedtoimage" class="feed related-to-image"><img class="techFlag" style="display:block; position: relative;" src="https://gallery.mailchimp.com/036babea48ecf05c961828f3e/images/60d57ab3-82bf-4ba5-9f8f-92825cfb8b0a.jpg" alt="tech">Repeatable region without image column: Lovely light colors and thrilling textures inspire our new Spring Collection.</div>
                                   									</td>
                                   									</tr>
                                   								</tbody>
@@ -1033,7 +1067,7 @@
                                   									<td valign="top" class="mcnTextContent" style="color: black;font-size: 18px !important;text-align: left;line-height:1.23em !important;left:0;padding:1em 18px;">
                                   										<div mc:edit="noxtice" class="feed">Repeatable region without image column: Lovely light colors and thrilling textures inspire our new Spring Collection.</div>
                                   										  
-                                  										<div mc:edit="related-to-image" class="feed related-to-image"><img class="techFlag" style="display:block; position: relative;" src="images/facegfk.jpg" alt="tech" mc:edit="">Repeatable region without image column: Lovely light colors and thrilling textures inspire our new Spring Collection.</div>
+                                  										<div mc:edit="relatedtoimage" class="feed related-to-image"><img class="techFlag" style="display:block; position: relative;" src="https://gallery.mailchimp.com/036babea48ecf05c961828f3e/images/60d57ab3-82bf-4ba5-9f8f-92825cfb8b0a.jpg" alt="tech">Repeatable region without image column: Lovely light colors and thrilling textures inspire our new Spring Collection.</div>
                                   									</td>
                                   									</tr>
                                   								</tbody>
@@ -1071,7 +1105,6 @@
                                   </table>
 
 
-
                              <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock">
                                   	<tbody class="mcnBoxedTextBlockOuter">
                                   		<tr>
@@ -1092,7 +1125,37 @@
                                   										  
                                   										<div mc:edit="feed" class="feed"><strong style="display:block;">6/21 Fall Semester Begins</strong>Repeatable region without image column: Lovely light colors and thrilling textures inspire our new Spring Collection.   <a style="color: #009ac7; font-size: 18px;" href="#">READ MORE</a> <span style="color: #009ac7">></span></div>
 
-                                  										<div mc:edit="feed" class="mcnTextContent" style="color: black;font-size: 18px !important;text-align: left;line-height:1.23em !important;left:0;padding:1em 18px; margin-top: 2em;">
+                                  											
+                                  										</div>
+                                  									</td>
+                                  									</tr>
+                                  								</tbody>
+                                  							</table>
+
+                                  						</td>
+                                  					</tr></tbody>
+                                  				</table>
+
+                                  			</td>
+                                  		</tr>
+                                  	</tbody>
+                                  </table>          
+
+                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock photo-credits">
+                                  	<tbody class="mcnBoxedTextBlockOuter">
+                                  		<tr>
+                                  			<td valign="top" class="mcnBoxedTextBlockInner">
+
+                                  				<table align="left" border="0" cellpadding="0" cellspacing="0" width="600" class="mcnBoxedTextContentContainer">
+                                  					<tbody><tr>
+
+                                  						<td class="photo-credits" style="padding-top:0px; padding-left:18px; padding-bottom:0px; padding-right:18px;">
+
+                                  							<table border="0" cellpadding="18" cellspacing="0" class="mcnTextContentContainer" width="100%" style="background-color: white;">
+                                  								<tbody>
+                                  									<tr>
+                                  									<td valign="top" class="mcnTextContent photo-credits" style="color: black;font-size: 18px !important;text-align: left;line-height:1.23em !important;left:0;padding:1em 18px;">
+                                  										<div mc:edit="credit" class="mcnTextContent photo-credits" style="color: black;font-size: 18px !important;text-align: left;line-height:1.23em !important;left:0;padding:1em 0;">
 
                                   											<p class="photo-credits" style="color: #000000;font-size: 12px !important; font-style: italic; margin: 0; padding: 0;">Photo Credits:</p>
                                   											
@@ -1158,9 +1221,9 @@
                                   								<tbody>
                                   									<tr>
                                   										<td valign="top" class="mcnTextContent" style="color: #009ac7;font-size: 14px !important;text-align: center;line-height:1.23em !important;left:0;padding:1em 18px;">
-                                  											<div mc:edit="notice" class="feed why">
-                                  												 <p style="font-family: 'Myriad Pro', sans-serif; color: #009ac7;font-size: 12px!important; font-weight: bold; display:block; text-align: center; margin-bottom: 1em !important;"letter-spacing: 2px; font-weight: bold;">SUBSCRIPTION OPTIONS</p>You’re receiving this newsletter because you’re a Macaulay scholar, or have subscribed through our site.
-                                  												 <a style="color: #009ac7" href="*|UNSUB|*" class="utilityLink">Click to unsubscribe.</a></p>
+                                  											<div mc:edit="delivery" class="feed why">
+                                  												 <p style="font-family: 'Myriad Pro', sans-serif; color: #009ac7;font-size: 12px!important; font-weight: bold; display:block; text-align: center; margin-bottom: 1em !important; letter-spacing: 2px; font-weight: bold;">SUBSCRIPTION OPTIONS</p>You’re receiving this newsletter because you’re a Macaulay scholar, or have subscribed through our site.
+                                  												 <a style="color: #009ac7" href="*|UNSUB|*" class="utilityLink">Click to unsubscribe.</a>
                                   											</div>
                                   										</td>
                                   									</tr>
@@ -1191,8 +1254,8 @@
 
                                                     <table border="0" cellpadding="18" cellspacing="0" class="mcnTextContentContainer" width="100%" style="background-color: #f4f4f4;">
                                                       <tbody><tr>
-                                                          <td valign="top" class="mcnTextContent" style="color: #FFFFFF;font-size: 18;text-align: center; padding: 1em !important;">
-                                                            <p style="text-align:center;font-family:Georgia, serif; font-size:12px;margin-bottom:0;color: black;">MACAULAY - THE HONORS COLLEGE atTHE CITY UNIVERSITY of NEW YORK</p>
+                                                          <td valign="top" class="mcnTextContent" style="color: #FFFFFF;text-align: center; padding: 1em !important;">
+                                                            <p style="text-align:center;font-family:Georgia, serif; font-size:12px;margin-bottom:0;color: black;">MACAULAY - THE HONORS COLLEGE at THE CITY UNIVERSITY of NEW YORK</p>
                                                             <p style="margin-top: 0; text-align: center;padding-top:0px; padding-right: 18px !important; font-size: 12px !important; color: #000;">
                                                             35 West 67th Street  New York, NY 10023    
                                                             Phone 212.729.2900    Fax 212.580.8130
@@ -1236,59 +1299,6 @@
                 
         </table>
 
-<!-- semi kinda full width ish 
-        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
-          <tbody><tr>
-              <td align="center" valign="top">
-                <table border="0" cellpadding="0" cellspacing="0" width="600" class="templateContainer">
-                  <tbody><tr>
-                      <td valign="top" class="footerContainer" style="padding-top:0; padding-bottom:10px;">
-
-                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock">
-                          <tbody class="mcnTextBlockOuter">
-                            <tr>
-                              <td valign="top" class="mcnTextBlockInner">
-
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="560" class="mcnTextContentContainer">
-                                  <tbody><tr>
-
-                                      <td valign="top" class="mcnTextContent" style="padding:0px; color: #009ac7;background:#f4f4f4;">
-
-                                        <p style="text-align:center;font-family:Georgia, serif; font-size:12px;margin-bottom:0;">MACAULAY - THE HONORS COLLEGE at</br>THE CITY UNIVERSITY of NEW YORK</p>
-
-
-
-
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="600" class="mcnTextContentContainer">
-                                          <tbody><tr>
-
-                                              <td valign="top" class="mcnTextContent" style="padding-top:0px; padding-right: 18px !important; font-size: 12px !important; padding-bottom: 9px; padding-left: 18px; color: #000;">
-                                                35 West 67th Street  New York, NY 10023    </br>
-                                                Phone 212.729.2900    Fax 212.580.8130
-                                              </td>
-                                            </tr>
-                                          </tbody></table>
-
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-
-
-
-
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table></td>
-                    </tr>
-                  </tbody></table>
-              </td>
-            </tr>
-
-          </tbody></table>
-END --->
-
 
 
                   
@@ -1313,3 +1323,5 @@ END --->
       </center>
     </body>
 </html>
+
+
