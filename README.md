@@ -9,11 +9,13 @@ MailChimp Template KB
 http://kb.mailchimp.com/templates/code/create-editable-content-areas-with-mailchimps-template-language
 
 Instructions
-* Build Deliverable Template
-- build deliverable template by zip -r the files
+#### Build Deliverable Template
+1. build deliverable template by zip -r template_name.zip repo_folder/ the files
+2. if you dont know what this means compress the folder with the files in it to a zip file
 
-* Initialise Deliverable Template
-- log into mailchimp
-- create new template
-- use your own or code yor own
-- upload files (zip)
+#### Initialise Deliverable Template
+1. log into mailchimp
+2. create new template
+3. use your own or code yor own
+4. upload files (zip)
+5. find the zip file you made in the Build Deliverable Template steps
