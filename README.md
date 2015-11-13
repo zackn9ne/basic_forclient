@@ -2,12 +2,18 @@
 - - -
 ### This is Macaulay's eblast template
 
-This file resides on
-- zackn9ne.github.io/basic_forclient/images
-- zackn9ne.github.io/basic_forclient
+Features Gh-Pages Branch
+- viewable progress online
 
-This must be used in conjunction with
-- mc:edit editable regions, specifically named via Mailchimp API
+MailChimp Template KB
+http://kb.mailchimp.com/templates/code/create-editable-content-areas-with-mailchimps-template-language
 
-When making updates!
-- push origin to gh-pages branch
+Instructions
+* Build Deliverable Template
+- build deliverable template by zip -r the files
+
+* Initialise Deliverable Template
+- log into mailchimp
+- create new template
+- use your own or code yor own
+- upload files (zip)
